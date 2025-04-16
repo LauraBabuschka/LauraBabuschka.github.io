@@ -1,0 +1,59 @@
+@font-face {
+    font-family:"BadSans";
+    src: url("V2BadSans.otf"); format: ("otf")
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"HelveticaNow";
+    src: url("Fonts/HelveticaNowText-Medium.otf"); format: ("otf")
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"NeueHaas";
+    src: url("Fonts/NeueHaasGroteskDisplay65Medium-817447.ttf"); format: ("ttf")
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+body{
+    background-color: rgb(1, 1, 1);
+    cursor: url('cursor10x10.png') 0 0, auto;
+}
+
+h1{
+    font-family: "BadSans";
+    font-size: 200px;
+    line-height: 0.4;
+    color: #39FF14
+}
+
+h2{
+    font-family: "BadSans";
+    font-size: 200px;
+    line-height: 0.4;
+    color: #39FF14
+}
+
+h2:hover {
+    font-family: "BadSans";
+    font-size: 200px;
+    line-height: 0.4;
+    color: #0026ff
+  }
+
+  p {
+    font-family: "NeueHaas";
+    font-size: 70px;
+    line-height: 0.1;
+    color: #fbfbfb
+  }
+
+
+   
