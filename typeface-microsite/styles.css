@@ -1,13 +1,6 @@
 @font-face {
     font-family:"BadSans";
-    src: url("V2BadSans.otf"); format: ("otf")
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family:"HelveticaNow";
-    src: url("Fonts/HelveticaNowText-Medium.otf"); format: ("otf")
+    src: url("Fonts/V2BadSans.otf"); format: ("otf")
     font-weight: normal;
     font-style: normal;
 }
@@ -18,9 +11,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
-
 
 body{
     background-color: rgb(1, 1, 1);
@@ -50,7 +40,7 @@ h2:hover {
 
   p {
     font-family: "NeueHaas";
-    font-size: 70px;
+    font-size: 50px;
     line-height: 0.1;
     color: #fbfbfb
   }
