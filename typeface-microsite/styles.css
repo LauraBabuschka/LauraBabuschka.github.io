@@ -21,14 +21,18 @@ h1{
     font-family: "BadSans";
     font-size: 200px;
     line-height: 0.4;
-    color: #39FF14
+    color: #39FF14;
+    outline: none;
+    text-align: center;
 }
 
 h2{
     font-family: "BadSans";
     font-size: 200px;
     line-height: 0.4;
-    color: #39FF14
+    color: #39FF14;
+    outline: none;
+    text-align:center;
 }
 
 h2:hover {
@@ -43,6 +47,14 @@ h2:hover {
     font-size: 50px;
     line-height: 0.1;
     color: #fbfbfb
+  }
+
+  .startpage {
+    font-family: "BadSans";
+    font-size: 200px;
+    line-height: 0.4;
+    color: #39FF14;
+    text-align: "right";
   }
 
 

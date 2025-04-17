@@ -1,3 +1,53 @@
 body {
     background-color: lightblue;
 }
+
+a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family:"NeueHaas";
+    src: url("typeface-microsite/Fonts/HelveticaNowText-Medium.otf"); format: ("ttf")
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "NeueHaas";
+    color: greenyellow;
+    font-size: 100px;
+    line-height: 1px;
+    text-align: center;
+}
+
+p {
+    font-family: "NeueHaas";
+    color: greenyellow;
+    font-size: 10px;
+
+}
+
+li{
+    font-family: "NeueHaas";
+    color: greenyellow;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+img{
+    size-adjust: 50px;
+    border-radius: 8px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+a:hover {
+    line-height: 0.4;
+    color: #1900ff
+  }
+
