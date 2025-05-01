@@ -78,12 +78,6 @@ h1:hover {
     text-align: "right";
   }
 
-  .chrome {
-    background: linear-gradient(to right, #000000, #a2a2a2, #ffffff, #000000, #a2a2a2, #000000, #a2a2a2, #ffffff, #000000,  #a2a2a2, #ffffff, #000000,  #a2a2a2, #ffffff, #000000, #a2a2a2, #ffffff, #000000, #a2a2a2, #ffffff, #000000, #a2a2a2, #ffffff, #000000,#a2a2a2, #ffffff, #000000,#a2a2a2, #ffffff, #000000,#a2a2a2, #ffffff, #000000,#a2a2a2, #ffffff, #000000,#a2a2a2, #ffffff, #000000, #a2a2a2, #ffffff, #000000, #a2a2a2, #ffffff, #000000,#a2a2a2, #ffffff, #000000, #a2a2a2, #ffffff, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
-
     .button{
         background-color:rgb(255, 255, 255);
         color:#000000;
@@ -98,40 +92,8 @@ h1:hover {
       }
     .buttonleft{
         position: fixed;
-        top: 1vw;
+        bottom: 1vw;
         left: 1vw;
-        background-color:rgb(255, 255, 255);
-        color:#000000;
-        text-decoration:none;
-        border-radius: 2vw;
-        border: 0.15vw solid black;
-        margin: 0.5vw;
-        padding: 0.5vw;
-        font-size: 1vw;
-        position: fixed;
-        top: 52vw;
-        left: 1vw;
-
-      }
-
-      .buttoncenter{
-        position: fixed;
-        top: 1vw;
-        background-color:rgb(255, 255, 255);
-        color:#000000;
-        text-decoration:none;
-        border-radius: 2vw;
-        border: 0.15vw solid black;
-        margin: 0.5vw;
-        padding: 0.5vw;
-        font-size: 1vw;
-        position: fixed;
-        top: 52vw;
-        left: 45vw;
-
-      }
-
-      .buttonright{
         display: inline;
         background-color:rgb(255, 255, 255);
         color:#000000;
@@ -144,11 +106,12 @@ h1:hover {
 
       }
 
-      .buttonleft:hover {
+      .buttoncenter{
         position: fixed;
-        top: 1vw;
-        left: 1vw;
-        background-color:#39FF14;
+        bottom: 1vw;
+        right: 45vw;
+        display: inline;
+        background-color:rgb(255, 255, 255);
         color:#000000;
         text-decoration:none;
         border-radius: 2vw;
@@ -156,26 +119,34 @@ h1:hover {
         margin: 0.5vw;
         padding: 0.5vw;
         font-size: 1vw;
+
+      }
+
+      .buttonright{
         position: fixed;
-        top: 52vw;
-        left: 1vw;
+        bottom: 1vw;
+        right: 1vw;
+        display: inline;
+        background-color:rgba(255, 255, 255);
+        color:#000000;
+        text-decoration:none;
+        border-radius: 2vw;
+        border: 0.15vw solid black;
+        margin: 0.5vw;
+        padding: 0.5vw;
+        font-size: 1vw;
+
+      }
+
+      .buttonleft:hover {
+        background-color:#39FF14;
         }
 
         .buttoncenter:hover{
-            position: fixed;
-            top: 1vw;
             background-color:#39FF14;
-            color:#000000;
-            text-decoration:none;
-            border-radius: 2vw;
-            border: 0.15vw solid black;
-            margin: 0.5vw;
-            padding: 0.5vw;
-            font-size: 1vw;
-            position: fixed;
-            top: 52vw;
-            left: 45vw;
-    
+          }
+          .buttonright:hover{
+            background-color:#39FF14;
           }
 
       img{
@@ -198,16 +169,112 @@ h1:hover {
       position:absolute;
       /* background-color: #a2a2a2;*/
       top: 0;
-      right: 0;
+      right: 2%;
     }
 
-    .titlecontainer {
+    /*.titlecontainer {
       width: 50%;
       position:absolute;
       /*background-color: #39FF14;*/
-      top: 0;
-      left:0;
+      /*top: 0;
+      left: 0; 
+    }*/
+    
+
+    .wonky {
+      position: absolute;
+      width: 50%;
+      top: 20%;
+      /*transform: translate(-50%, -50%);*/
+      font-family: "BadSans";
+      font-size: 11vw;
+      font-weight: normal;
+      color:rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: black;
+      letter-spacing: -0.03em;
+      text-align: center;
+      cursor: default;
     }
+    
+    /* We need to make the spans have a display:inline-block since by default they have a display value of inline */
+    /* display:inline elements will not respond to transform properties like rotation */
+    span {
+      display: inline-block;
+      transition: 0.3s ease-in-out;
+    }
+    
+    /* When the user hovers over the parent, the children (spans) rotate */
+    .wonky:hover #first {
+      font-family: "BadSans";
+      transform: rotate(0deg);
+    }
+    
+    .wonky:hover #second {
+      font-family: "BadSans";
+      transform: rotate(15deg);
+    }
+    
+    .wonky:hover #third {
+      font-family: "BadSans";
+      transform: rotate(-5deg);
+    }
+    
+    .wonky:hover #fourth {
+      font-family: "BadSans";
+      transform: rotate(-20deg);
+    }
+    
+    .container:hover #fifth {
+      font-family: "BadSans";
+      transform: rotate(10deg);
+    }
+    
+    .wonky:hover #sixth {
+      font-family: "BadSans";
+      transform: rotate(-10deg);
+    }
+    
+    .wonky:hover #seventh {
+      font-family: "BadSans";
+      transform: rotate(0deg);
+    }
+    
+    .wonky:hover #eigth {
+      font-family: "BadSans";
+      transform: rotate(-15deg);
+    }
+
+    .imageleft {
+      position:absolute;
+      /* background-color: #a2a2a2;*/
+      top: 0;
+      left: 2%;
+    }
+    
+    .quote {
+      position: absolute;
+      width: 50%;
+      top: 3%;
+      left: 50%;
+      /*transform: translate(-50%, -50%);*/
+      font-family: "BadSans";
+      font-size: 4vw;
+      font-weight: normal;
+      color:rgb(0, 0, 0);
+    }
+    .fliesstext {
+      position: absolute;
+      width: 50%;
+      top: 23vw;
+      left: 50%;
+      /*transform: translate(-50%, -50%);*/
+      font-family: "BadSans";
+      font-size: 2vw;
+      font-weight: normal;
+      color:rgb(0, 0, 0);
+    }
+
 
 
    
